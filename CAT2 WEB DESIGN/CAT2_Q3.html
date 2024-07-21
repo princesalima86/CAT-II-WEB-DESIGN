@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: #d8bfd8; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px; 
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .input-container ion-icon {
+            margin-right: 10px;
+            color: #888;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: purple; 
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5a005a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="input-container">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" id="name" placeholder="Name">
+            </div>
+
+            <div class="input-container">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" id="email" placeholder="Email ID">
+            </div>
+
+            <div class="input-container">
+                <ion-icon name="call-outline"></ion-icon>
+                <input type="number" id="phone" placeholder="Phone">
+            </div>
+
+            <div class="input-container">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="password" placeholder="Set Password">
+            </div>
+
+            <button type="submit">REGISTER</button>
+        </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
